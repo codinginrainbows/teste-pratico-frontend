@@ -1,0 +1,75 @@
+:root {
+  /* Cores */
+  --blue-primary: #0500ff;
+  --blue-10: #edeffb;
+  --black: #1c1c1c;
+  --gray-20: #9e9e9e;
+  --gray-10: #dfdfdf;
+  --gray-05: #f5f5f5;
+  --gray-00: #f0f0f0;
+  --white: #ffffff;
+
+  /* Espaçamentos */
+  --spacing-md-80: 80px;
+  --spacing-md-60: 60px;
+  --spacing-md-40: 40px;
+  --spacing-md-32: 32px;
+  --spacing-rg-28: 28px;
+  --spacing-rg-20: 20px;
+  --spacing-rg-16: 16px;
+  --spacing-lt-08: 8px;
+  --spacing-lt-04: 4px;
+
+  /* Tipografia */
+  --font-family-primary: "Roboto", "Helvetica", Arial, sans-serif;
+
+  --font-size-h1: 20px;
+  --font-weight-h1: 500;
+
+  --font-size-h2: 16px;
+  --font-weight-h2: 500;
+
+  --font-size-h3: 16px;
+  --font-weight-h3: 400;
+}
+
+/*
+  2) Normalização
+  ------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  3) Estilos globais
+  ------------------
+*/
+body {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  background-color: var(--gray-05);
+  color: var(--black);
+}
+
+/*
+  4) Definições básicas de headings
+  ------------------
+*/
+h1 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+}
+h2 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+}
+h3 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+}
