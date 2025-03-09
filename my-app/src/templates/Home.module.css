@@ -1,0 +1,36 @@
+.home {
+  font-family: sans-serif;
+  background-color: var(--gray-00);
+  min-height: 100vh;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 var(--spacing-md-40);
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  color: var(--black);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ----- MOBILE ----- */
+@media (max-width: 768px) {
+  .topBar {
+    display: block;
+  }
+
+  .topBar h2 {
+    margin-bottom: var(--spacing-md-32);
+  }
+}
