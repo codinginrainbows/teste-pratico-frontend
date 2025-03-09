@@ -1,0 +1,46 @@
+.searchBar {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--gray-10);
+  border-radius: var(--spacing-lt-08);
+  background-color: var(--white);
+}
+
+.searchBar input {
+  flex: 1;
+  min-width: 300px;
+  border: none;
+  outline: none;
+  border-radius: var(--spacing-rg-20);
+  padding: var(--spacing-rg-16) var(--spacing-rg-16);
+  font-size: 16px;
+}
+
+.searchBar input::placeholder {
+  color: var(--gray-20);
+  font-weight: var(--font-weight-h3);
+}
+
+/* ----- LUPINHA ----- */
+.searchBar img {
+  width: var(--spacing-rg-16);
+  height: var(--spacing-rg-16);
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+/* ----- MOBILE ----- */
+@media (max-width: 768px) {
+  .searchBar {
+    width: 100%;
+    display: flex;
+  }
+
+  .searchBar input {
+    min-width: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

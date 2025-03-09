@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+/* ----- DESKTOP ----- */
+.desktopHeader {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 1fr 1fr;
+  background-color: var(--blue-primary);
+  color: var(--white);
+  padding: var(--spacing-rg-16) var(--spacing-md-32);
+  position: relative;
+}
+
+.circleIcon {
+  display: none;
+}
+
+.Name,
+.Job,
+.Date,
+.Phone {
+  padding-left: var(--spacing-rg-16);
+}
+
+/* ----- MOBILE ----- */
+@media (max-width: 768px) {
+  .desktopHeader {
+    grid-template-columns: 60px 1fr;
+    padding: var(--spacing-rg-16) var(--spacing-rg-16);
+  }
+
+  .Job,
+  .Date,
+  .Phone {
+    display: none;
+  }
+
+  .circleIcon {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 21px;
+    right: 21px;
+  }
+}

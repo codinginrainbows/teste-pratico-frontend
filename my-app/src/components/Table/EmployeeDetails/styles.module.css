@@ -1,0 +1,22 @@
+/* ----- MOBILE ----- */
+.details {
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--gray-10);
+  padding: 4px 0;
+  margin-bottom: 1rem;
+}
+
+.row:last-child {
+  margin-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
