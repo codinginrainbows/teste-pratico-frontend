@@ -4,15 +4,6 @@ Este é um **teste técnico** desenvolvido para uma **vaga na empresa BeTalent**
 
 ---
 
-## Features
-
-- Consumir dados de um **JSON Server** local.
-- Visualizar uma **tabela**.
-- Pesquisar funcionários por nome, cargo ou telefone.
-- Exibir detalhes de cada funcionário ao expandir na versão mobile.
-
----
-
 ## Como Rodar o Projeto
 
 ### 1. Clonar o Repositório
@@ -67,27 +58,27 @@ A aplicação segue **5 camadas principais**, conforme ilustrado no diagrama. Ca
 
 ### 1. Templates
 
-- **Responsabilidade**: Montar o layout final da página, obtendo dados (API ou outros) e repassando aos componentes.
+- **Responsabilidade**: Montar o layout final da página e passar os dados da API aos componentes dela.
 - **Exemplo**: `Home.tsx`
 
 ### 2. Components
 
-- **Responsabilidade**: Renderizar partes específicas da UI (botões, tabelas, listas, cabeçalhos etc.), recebendo props e sem buscar dados por conta própria.
+- **Responsabilidade**: Renderizar partes específicas da UI, recebendo props prontas (sem buscar/manipular dados).
 - **Exemplo**: `Header`, `SearchBar`, `Table`, `EmployeeList`, `EmployeeRow`, `EmployeeDetails`
 
 ### 3. Hooks
 
-- **Responsabilidade**: Encapsular lógica de manipulação de dados, estados e efeitos, oferecendo uma interface clara e reutilizável (por ex.: fetch, filtro).
+- **Responsabilidade**: Encapsular lógica de manipulação de dados com uma interface clara.
 - **Exemplo**: `useFetcher`, `useFilterEmployees`
 
 ### 4. Utils
 
-- **Responsabilidade**: Fornecer funções auxiliares (por ex. formatar datas, telefones) sem dependência de React/JSX.
+- **Responsabilidade**: Fornecer funções auxiliares sem dependências do JSX.
 - **Exemplo**: `dateFormatter.ts`, `phoneFormatter.ts`
 
 ### 5. Common
 
-- **Responsabilidade**: Centralizar tipos, interfaces e constantes que representam o domínio (ex.: IEmployee), usados em todo o projeto.
+- **Responsabilidade**: Centralizar interfaces e constants que representem o domínio.
 - **Exemplo**: `employee.ts`, `searchFields.ts`
 
 ---
@@ -101,7 +92,16 @@ npm test
 ```
 
 - Os testes utilizam **Jest** e **Testing Library**.
-- Cada componente/hook possui arquivos de teste dedicados (ex.: `EmployeeRow.test.tsx`, `useFetcher.test.ts`).
+- Cada componente possui um arquivo de teste dedicado (ex.: `EmployeeRow.test.tsx`, `EmployeeDetails.test.tsx`).
+
+---
+
+## Features
+
+- Consumir dados de um **JSON Server** local.
+- Visualizar uma **tabela**.
+- Pesquisar funcionários por nome, cargo ou telefone.
+- Exibir detalhes de cada funcionário ao expandir na versão mobile.
 
 ---
 
@@ -113,3 +113,4 @@ npm test
 - CSS Modules
 - JSON Server para simular API
 - Jest + Testing Library para testes unitários
+
