@@ -20,7 +20,7 @@ Este é um **teste técnico** desenvolvido para uma **vaga na empresa BeTalent**
 Abra um terminal e execute:
 
 ```bash
-git clone [url-do-repositório](https://github.com/codinginrainbows/teste-pratico-frontend/tree/main)
+git clone https://github.com/codinginrainbows/teste-pratico-frontend
 cd teste-pratico-frontend
 ```
 
